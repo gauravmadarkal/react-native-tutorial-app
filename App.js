@@ -9,9 +9,9 @@
 import React from 'react';
 import {
 	Image,
-  SafeAreaView,
-  StatusBar,
-  TouchableOpacity,
+	SafeAreaView,
+	StatusBar,
+	TouchableOpacity,
 } from 'react-native';
 import {
 	createNativeStackNavigator
@@ -40,7 +40,7 @@ function App() {
 							name='Home'
 							children={Home}
 							options={({ navigation }) => ({
-								headerTitle: () => <HeaderTitle title='My Learnings' />,
+								headerTitle: () => <HeaderTitle />,
 								headerRight: () => (
 									<TouchableOpacity
 										onPress={() => navigation.navigate('Profile')}
@@ -57,7 +57,11 @@ function App() {
 							name='Profile'
 							children={Profile}
 							options={() => ({	
-								headerTitle: () => <HeaderTitle title='Profile' />,
+								headerTitle: () => <HeaderTitle title='My Profile' />,
+								headerStyle: {
+									backgroundColor: '#263238',
+								},
+								headerTintColor: '#fff',
 							})}
 						/>
 					</Stack.Navigator>

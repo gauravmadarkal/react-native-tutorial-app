@@ -18,7 +18,7 @@ export const tutorials = {
 	],
 	'Mobile Development': [
 		{
-			title: 'Android Development',
+			title: 'Android',
 			type: 'Mobile Development',
 			status: 0
 		},
@@ -28,7 +28,7 @@ export const tutorials = {
 			status: 0
 		},
 		{
-			title: 'React Native Development',
+			title: 'React Native',
 			type: 'Mobile Development',
 			status: 50
 		},

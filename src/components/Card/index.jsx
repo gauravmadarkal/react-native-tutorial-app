@@ -1,7 +1,6 @@
 import React from 'react';
-import { Image, Text, TouchableOpacity, View } from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
 import style from './style';
-import ArrowIcon from '../../assets/icons/arrow.png';
 
 
 const Card = ({
@@ -14,7 +13,11 @@ const Card = ({
 				<Text style={style.title}>{title}</Text>
 				<Text style={style.completionStatus}>Completed: {completionStatus}%</Text>
 			</View>
-			<Image source={ArrowIcon} style={style.viewTutorial} />
+			<View style={style.button}>
+				<Text style={{ fontWeight: 'bold' }}>
+					{completionStatus === 0? 'Start' : completionStatus < 100 ? 'Resume': 'Restart'}
+				</Text>
+			</View>
 		</TouchableOpacity>
 	)
 };

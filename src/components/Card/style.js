@@ -3,12 +3,9 @@ import { colors } from '../../assets/variables';
 
 const style = {
 	container: {
-		height: 120,
 		borderRadius: 10,
-		padding: 10,
 		margin: 10,
 		flex: 1,
-		flexDirection: 'row',
 		alignItems: 'center',
 		elevation: 3,
 		backgroundColor: '#e0f7fa'
@@ -19,16 +16,24 @@ const style = {
 	title: {
 		fontSize: 17,
 		fontWeight: 'bold',
-		maxWidth: 100
+		maxWidth: 100,
+		margin: 10,
+		marginBottom: 0
 	},
 	completionStatus: {
 		fontSize: 13,
-		color: colors.black
+		color: colors.black,
+		margin: 10,
 	},
-	viewTutorial: {
-		width: 20,
-		height: 20,
-		alignSelf: 'center',
+	button: {
+		height: 30,
+		backgroundColor: colors.info,
+		width: '100%',
+		flex: 1,
+		justifyContent: 'center',
+		alignItems: 'center',
+		borderBottomLeftRadius: 10,
+		borderBottomRightRadius: 10
 	},
 	completed: {
 		backgroundColor: colors.success,

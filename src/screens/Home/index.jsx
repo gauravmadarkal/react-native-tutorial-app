@@ -1,7 +1,6 @@
 import React from 'react';
-import { FlatList, Image, ScrollView, Text, View } from 'react-native';
+import { FlatList, ScrollView, Text, View } from 'react-native';
 import { tutorials } from '../../assets/constants';
-import { colors } from '../../assets/variables';
 import Card from '../../components/Card';
 import style from './style';
 
